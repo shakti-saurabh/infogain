@@ -10,10 +10,11 @@ public class Product {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	private long menuId;
+	
 	private String name;
 	private String desc;
 	private Double price;
+	private String categroy;
 	public long getId() {
 		return id;
 	}
@@ -38,11 +39,12 @@ public class Product {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-	public long getMenuId() {
-		return menuId;
+	
+	public String getCategroy() {
+		return categroy;
 	}
-	public void setMenuId(long menuId) {
-		this.menuId = menuId;
+	public void setCategroy(String categroy) {
+		this.categroy = categroy;
 	}
 	
 }
